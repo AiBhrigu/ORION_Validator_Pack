@@ -1,0 +1,28 @@
+name: ORION Validator CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up DFX
+      run: |
+        sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
+        echo "$HOME/.local/share/dfx/bin" >> $GITHUB_PATH
+
+    - name: Check dfx version
+      run: dfx --version
+
+    - name: Build canisters
+      run: |
+        dfx start --background
+        dfx build
