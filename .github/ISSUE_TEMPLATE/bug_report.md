@@ -1,29 +1,23 @@
 ---
-name: 🐛 Bug report
-about: Сообщить об ошибке в ORION Validator Pack
-title: "[BUG] "
+name: Bug Report
+about: Create a report to help us improve
+title: '[Bug]: '
 labels: bug
 assignees: ''
 
 ---
 
-**Опишите баг**
-Четко опишите, что пошло не так.
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Шаги для воспроизведения**
-1. Клонируйте репозиторий
-2. Запустите `...`
-3. См. ошибку
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. See error
 
-**Ожидаемое поведение**
-Что вы ожидали увидеть?
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-**Скриншоты**
-Если есть — прикрепите скриншот.
-
-**Окружение**
- - ОС: [например, Ubuntu 22.04]
- - Версия dfx: `dfx --version`
-
-**Дополнительно**
-Любая другая инфа.
+**Additional context**
+Add any other context about the problem here.

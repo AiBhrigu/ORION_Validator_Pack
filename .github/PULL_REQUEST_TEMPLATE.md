@@ -1,24 +1,23 @@
-# 🚀 Pull Request
+# Pull Request
 
-**Описание**
-Опишите, что делает этот Pull Request.
+## Description
 
-**Связанные Issue**
-Закрывает #номер_ишью, если применимо.
+Please include a summary of the changes and the related issue. Please also include relevant motivation and context.
 
-**Изменения**
-- [ ] Новая фича
-- [ ] Исправление бага
-- [ ] Документация
-- [ ] Рефакторинг
+## Related Issue
 
-**Проверка**
-- [ ] Код проверен на локальной машине
-- [ ] Все тесты проходят
-- [ ] README обновлен при необходимости
+Fixes # (issue)
 
-**Скриншоты**
-Если визуально что-то меняется — приложите.
+## Type of Change
 
-**Примечания**
-Все, что важно для ревьюера.
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
+- [ ] Other (describe):
+
+## Checklist
+
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my own code
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally
