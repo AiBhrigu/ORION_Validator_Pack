@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  validator:
+    build: .
+    container_name: orion_validator
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+      - "4943:4943"
+    command: ["bash", "./install.sh"]

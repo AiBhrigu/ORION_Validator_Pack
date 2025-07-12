@@ -1,0 +1,23 @@
+# Ignore node modules if any
+node_modules
+npm-debug.log
+
+# Ignore Git
+.git
+.gitignore
+
+# Ignore local dev stuff
+*.swp
+*.swo
+*.swn
+*.DS_Store
+
+# Ignore build
+.dfx
+*.wasm
+*.zip
+
+# Ignore OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
