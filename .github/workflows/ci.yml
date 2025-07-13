@@ -1,28 +1,29 @@
-name: ORION Validator CI
+name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
 
-    - name: Set up DFX
-      run: |
-        sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-        echo "$HOME/.local/share/dfx/bin" >> $GITHUB_PATH
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-    - name: Check dfx version
-      run: dfx --version
+    - name: Install dependencies
+      run: npm install
 
-    - name: Build canisters
-      run: |
-        dfx start --background
-        dfx build
+    - name: Run tests
+      run: npm test
+
+    - name: Build Docker image
+      run: docker build -t orion-validator-pack .
