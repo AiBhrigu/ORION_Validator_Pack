@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# DFX local cache and artifacts
+.dfx/
+.pocket-ic/
+
+# Build artifacts
+*.wasm
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Secrets & envs (если вдруг добавишь)
+.env
+*.pem
