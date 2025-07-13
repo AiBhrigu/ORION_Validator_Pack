@@ -1,17 +1,17 @@
-# Use official Motoko base image (можно поменять)
-FROM dfinity/moc-base:latest
+# Используем официальный DFINITY образ или Ubuntu + DFX
+FROM dfinity/dfx:latest
 
-# Установим DFX CLI
-RUN apt-get update && \
-    apt-get install -y curl git build-essential && \
-    sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
-
-# Копируем всё
+# Установить рабочую директорию
 WORKDIR /app
+
+# Копировать всё внутрь контейнера
 COPY . .
 
-# Собираем канистры
-RUN dfx build
+# Запустить установку
+RUN bash install.sh
 
-# Дефолтная команда
-CMD ["dfx", "start", "--background"]
+# Экспонируем порт DFX
+EXPOSE 8000
+
+# Команда по умолчанию
+CMD ["dfx", "start", "--background"] && ["dfx", "deploy"] && tail -f /dev/null
