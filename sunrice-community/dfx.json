@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "sunrice-community-backend": {
+      "main": "src/sunrice-community-backend/main.mo",
+      "type": "motoko"
+    },
+    "sunrice-community-frontend": {
+      "dependencies": [
+        "sunrice-community-backend"
+      ],
+      "source": [
+        "src/sunrice-community-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "sunrice-community-frontend"
+    },
+    "nft-mint": {
+      "main": "src/nft-mint/main.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
