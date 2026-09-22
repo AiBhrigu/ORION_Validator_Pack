@@ -1,3 +1,15 @@
+# Historical repository
+
+> **Status:** historical 2025 ICP validator / governance / BRI token package · preserved for provenance.
+>
+> This repository documents an earlier packaged Internet Computer experiment that combined the **ORION Validator** name with validator deployment, BHRIGU governance, and BRI token components. It is **not the current ORION architecture**, current BHRIGU governance model, or a current token authority for Φ Research Systems.
+>
+> **Current authority:** [AiBhrigu public system hierarchy](https://github.com/AiBhrigu/AiBhrigu) · [Φ Research Systems](https://www.bhrigu.io/systems?lang=en)
+>
+> Historical code, packaging, deployment tooling, token/governance experiments, credits, and commit history below are intentionally preserved unchanged.
+
+---
+
 # 🚀 ORION Validator Pack
 
 **ORION Validator Pack** — это готовый пакет для запуска и поддержки кастомного валидатора в сети ICP с интеграцией Governance и BRI Token.
